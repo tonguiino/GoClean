@@ -10,3 +10,15 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+**advertencia:**
+## Librerias consumidas
+1. Libreria que permite utilizar iconos
+https://react-icons.github.io/react-icons/
+2. Libreria utilizada para consumo de apis
+https://axios-http.com/docs/intro
+3. Libreria para crear formularios dinamicos facil y responsive
+https://react-hook-form.com/get-started
+
+
+
