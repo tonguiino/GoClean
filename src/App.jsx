@@ -15,8 +15,8 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home/>} ></Route>
+
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
-        
       </Routes>
     </>
   )
