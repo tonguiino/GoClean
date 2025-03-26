@@ -9,14 +9,14 @@ const Menu = () => {
                 <h2>GoClean</h2>
                 <ul className="nav-menu">
                     <li><NavLink to='#' className='inicio'>inicio</NavLink></li>
-                    <li><NavLink to='#'>Se un socio</NavLink></li>
-                    <li><NavLink to='#'>Acerca de nosotros</NavLink></li>
-                    <li><NavLink to='#'>Precios</NavLink></li>
-                    <li><NavLink to='#'>Contactanos</NavLink></li>
+                    <li><NavLink to='#'>se un socio</NavLink></li>
+                    <li><NavLink to='#'>acerca de nosotros</NavLink></li>
+                    <li><NavLink to='#'>precios</NavLink></li>
+                    <li><NavLink to='#'>contactanos</NavLink></li>
                 </ul>
                 <ul className="nav-users">
-                    <li><NavLink to='#' className='Registrate'>inicio</NavLink></li>
-                    <li><NavLink to='#' className='Inicia aqui!!'>inicio</NavLink></li>
+                    <li><NavLink to='#' className=''>Registrate</NavLink></li>
+                    <li><NavLink to='#' className=''>Inicia aqui!!</NavLink></li>
                 </ul>
             </header>
 
