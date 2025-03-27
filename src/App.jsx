@@ -8,7 +8,7 @@ import Home from './pages/home/Home';
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
 //En este bloque se agregaran las rutas del proyecto, se debe crear una ruta nueva po rcada pagina, sigan la estructura como ejemplo la de HOME
   return (
