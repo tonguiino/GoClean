@@ -1,12 +1,18 @@
 import Menu from "../../components/header/menu"
+import banner from "../../assets/img/Se_Un_Socio.jpg"
+import "./Home.scss"
 
 
 const Home = () => {
     return (
         <>
-        <Menu/>
-        <h1>Hola mundo</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusantium, repellat culpa quaerat, tenetur sint eligendi suscipit in nesciunt, consequuntur voluptate cumque illo impedit rem et velit exercitationem! Minima, dicta.</p>
+            <Menu />
+            <section>
+                <div>
+                    <img src={banner} className="img-banner" alt="invitacion a ser socio" />
+                </div>
+
+            </section>
         </>
 
     )
