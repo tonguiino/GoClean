@@ -1,10 +1,16 @@
-section{
+section {
     width: 70%;
     margin-top: 50px;
     display: grid;
     place-content: center;
 
-    .img-banner{
-        width: 50em;
+    .container-img-banner {
+        display: grid;
+        place-content: center;
+
+        .img-banner {
+            width: 50em;
+        }
     }
+    
 }
