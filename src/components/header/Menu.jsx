@@ -8,9 +8,9 @@ const Menu = () => {
             <header className="header-nav">
                 <h2>GoClean</h2>
                 <ul className="nav-menu">
-                    <li><NavLink to='#' className='inicio'>inicio</NavLink></li>
+                    <li><NavLink to='/' className='inicio'>inicio</NavLink></li>
                     <li><NavLink to='#'>se un socio</NavLink></li>
-                    <li><NavLink to='#'>acerca de nosotros</NavLink></li>
+                    <li><NavLink to='/about'>acerca de nosotros</NavLink></li>
                     <li><NavLink to='#'>precios</NavLink></li>
                     <li><NavLink to='#'>contactanos</NavLink></li>
                 </ul>
