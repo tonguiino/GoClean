@@ -5,6 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Socio from './components/socio/Socio';
+import Contactanos from './components/contactanos/Contactanos';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} ></Route>
         <Route path='/socio' element={<Socio/>} ></Route>
+        <Route path='/contactanos' element={<Contactanos/>} ></Route>
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
       </Routes>
     </>
