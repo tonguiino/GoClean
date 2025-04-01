@@ -1,6 +1,7 @@
 import React from "react";
 import "./Socio.scss"; 
 import banner from "../../assets/img/haztesocio.png";
+import Menu from "../../components/header/menu";
 
 const Socio = () => {
 
