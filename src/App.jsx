@@ -12,13 +12,15 @@ import Contactanos from './components/contactanos/Contactanos';
 function App() {
 
 
-//En este bloque se agregaran las rutas del proyecto, se debe crear una ruta nueva po rcada pagina, sigan la estructura como ejemplo la de HOME
+  //En este bloque se agregaran las rutas del proyecto, se debe crear una ruta nueva po rcada pagina, sigan la estructura como ejemplo la de HOME
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home/>} ></Route>
-        <Route path='/socio' element={<Socio/>} ></Route>
-        <Route path='/contactanos' element={<Contactanos/>} ></Route>
+        <Route path='/' element={<Home />} ></Route>
+        <Route path='/socio' element={<Socio />} ></Route>
+        <Route path='/acercaNosotros' element={<Home />} ></Route>
+        <Route path='/precios' element={<Home />} ></Route>
+        <Route path='/contactanos' element={<Contactanos />} ></Route>
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
       </Routes>
     </>
