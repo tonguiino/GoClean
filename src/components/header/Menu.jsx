@@ -12,11 +12,11 @@ const Menu = () => {
                     <li><NavLink to='/socio'>Sé un socio</NavLink></li>
                     <li><NavLink to='/acercaNosotros'>Acerca de nosotros</NavLink></li>
                     <li><NavLink to='/precios'>Precios</NavLink></li>
-                    <li><NavLink to='/contactanos'>Contactanos</NavLink></li>
+                    <li><NavLink to='/contactanos'>Contáctanos</NavLink></li>
                 </ul>
                 <ul className="nav-users">
-                    <li><NavLink to='#' className=''>Registrate</NavLink></li>
-                    <li><NavLink to='#' className=''>Inicia aqui!!</NavLink></li>
+                    <li><NavLink to='#' className=''>Regístrate</NavLink></li>
+                    <li><NavLink to='#' className=''>Inicia sesión</NavLink></li>
                 </ul>
             </header>
         </>
