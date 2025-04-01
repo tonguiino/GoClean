@@ -16,6 +16,7 @@
             img {
                 max-width: 80%;
                 height: auto;
+                border-radius: 50%;
             }
         }
 
@@ -54,6 +55,7 @@
                         border: 1px solid #ddd;
                         border-radius: 5px;
                         font-size: 1em;
+                        background-color: white;
                     }
 
                     textarea {
@@ -65,7 +67,7 @@
                     display: inline-block;
                     padding: 15px 30px;
                     background-color: #2efa85;
-                    color: #525151;
+                    color: white;
                     text-decoration: none;
                     border-radius: 5px;
                     font-weight: bold;
