@@ -6,6 +6,7 @@ const Socio = () => {
 
     return (    
     <>
+        <Menu />
         <section className="socio">
             <div className="content">
                 <div className="img-container">
