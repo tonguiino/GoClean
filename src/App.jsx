@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/socio' element={<Socio />} ></Route>
-        <Route path='/acercaNosotros' element={<Acerca_us/>} ></Route>
+        <Route path='/acercaNosotros' element={<Acerca_us />} ></Route>
         <Route path='/precios' element={<Home />} ></Route>
         <Route path='/contactanos' element={<Contactanos />} ></Route>
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
