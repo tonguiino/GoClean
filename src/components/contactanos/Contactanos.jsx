@@ -2,6 +2,7 @@ import React from 'react';
 import './Contactanos.scss';
 import Menu from "../../components/header/menu";
 import banner from '../../assets/img/atencionCliente.jpg';
+import Footer from '../footer/Footer';
 
 const Contactanos = () => {
     return (
@@ -34,6 +35,7 @@ const Contactanos = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };
