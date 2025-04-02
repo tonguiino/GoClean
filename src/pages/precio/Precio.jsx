@@ -1,6 +1,7 @@
 import Card from "../../components/cardPrecios/Card";
 import Footer from "../../components/footer/Footer";
 import Menu from "../../components/header/menu";
+import imgSofa from "../../assets/img/Sofa-sala-limpio.jpg"
 import "./Precio.scss"
 
 const Precio = () => {
@@ -9,9 +10,11 @@ const Precio = () => {
         <>
             <Menu />
             <section className="price-container">
-                <h2>Elige el plan perfecto para ti</h2>
-                <h3>Nuestros servicios están diseñados para adaptarse a tu tiempo y necesidades</h3>
-
+                <img src={imgSofa} alt="" />
+                <div>
+                    <h2>Elige el plan perfecto para ti</h2>
+                    <p>Conoce nuestros planes de limpieza flexibles y elige el que mejor se adapte a tus necesidades</p>
+                </div>
                 <div className="cards-container">
                     <Card className="card" titulo="Plan mañana" hora_inicio="8:00 a.m" hora_final="12:00 m" tiempo="4" precio="80.000" ></Card>
 
