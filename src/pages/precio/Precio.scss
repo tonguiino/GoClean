@@ -1,0 +1,19 @@
+.price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img-price{
+        border-radius: 10px;
+    }
+    .text-price{
+        text-align: center;
+        margin: 50px 0px !important ;
+    }
+    .cards-container{
+        display: flex;
+        gap: 50px;
+        margin-bottom: 40px;
+    
+    }
+}
