@@ -1,4 +1,9 @@
 .price-container{
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    .cards-container{
+        display: flex;
+        gap: 50px;
+    
+    }
 }

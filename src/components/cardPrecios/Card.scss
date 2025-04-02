@@ -9,9 +9,11 @@
     box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
     -webkit-box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
     -moz-box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
+    transition: transform 0.6s ease;
+    
 
     .title-card {
-        color: #196f3d;
+        color: #1aa454;
     }
 
     ul {
@@ -29,8 +31,14 @@
         background-color: #196f3d;
         color: #ffff !important;
         text-align: center;
+
     }
 
+    &:hover{
+        background-color: #17202a;
+        color: #ffff;
+        transform: scale(1.05);
+    }
 
 
 }
