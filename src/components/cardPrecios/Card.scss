@@ -1,0 +1,28 @@
+.card-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 3px 0px 11px 0px rgba(0, 0, 0, 0.71);
+
+    .title-card{
+        color: #196f3d;
+    }
+
+    .button-card{
+        width: 8em;
+        padding: 5px !important;
+        border-radius: 30px !important;
+        background-color: #196f3d ;
+        color: #ffff !important;
+        text-align: center;
+    }
+
+
+
+}
