@@ -10,8 +10,8 @@ const Precio = () => {
         <>
             <Menu />
             <section className="price-container">
-                <img src={imgSofa} alt="" />
-                <div>
+                <img src={imgSofa} alt="Sala muy limpia" className="img-price" />
+                <div className="text-price">
                     <h2>Elige el plan perfecto para ti</h2>
                     <p>Conoce nuestros planes de limpieza flexibles y elige el que mejor se adapte a tus necesidades</p>
                 </div>
