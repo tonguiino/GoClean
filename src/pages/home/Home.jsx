@@ -2,6 +2,7 @@ import Menu from "../../components/header/menu"
 import banner from "../../assets/img/Se_Un_Socio.jpg"
 import "./Home.scss"
 import { IoIosArrowForward } from "react-icons/io";
+import Footer from "../../components/footer/Footer";
 
 
 
@@ -42,24 +43,17 @@ const Home = () => {
                     </details>
                     <details name="goclean">
                         <summary >¿Como puedo cancelar o reprogramar mi reserva?</summary>
-                        <p>Desde la sección de reservas en nuestra plataforma, puedes cancelar o reprogramar tu servicio. Si cancelas con al menos 24 horas de antelación, recibirás un reembolso total. Para cancelaciones con menos tiempo, pueden aplicarse cargos según nuestras políticas.
-
-
-
-
-
-
-
-</p>
+                        <p>Desde la sección de reservas en nuestra plataforma, puedes cancelar o reprogramar tu servicio. Si cancelas con al menos 24 horas de antelación, recibirás un reembolso total. Para cancelaciones con menos tiempo, pueden aplicarse cargos según nuestras políticas.</p>
                     </details>
                 </div>
                 <div className="container-goclean-contac">
-                <h2>Contactanos</h2>
+                    <h2>Contactanos</h2>
                     <p>No importa si vives en un estudio, casa o tienes una oficina grande, GoClean ofrece soluciones de limpieza personalizadas. Nuestros profesionales de la limpieza son expertos en hacer que tus espacios luzcan siempre relucinetes y lo mejor!! Puedes reservar este servicio en linea y en menos de 1 minuto</p>
-               
+
                 </div>
 
             </section>
+            <Footer />
         </>
 
     )

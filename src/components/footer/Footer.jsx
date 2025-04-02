@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <footer>
 
-                <p>&copy {year} GoCLean. Todos lo redechos reservados. </p>
+                <p>&copy; {year} GoCLean. Todos lo redechos reservados. </p>
             </footer>
         </>
     )
