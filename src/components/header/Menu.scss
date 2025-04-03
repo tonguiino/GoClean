@@ -70,8 +70,7 @@ header {
 
 @media screen and (max-width: 426px) {
     header {
-        height: 500px;
-        background-color: #378b5b;
+        height: 435px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -114,5 +113,8 @@ header {
             flex-direction: column;
             justify-content: space-around;
         }
+    }
+    header.open-menu{
+        height: 40px;
     }
 }

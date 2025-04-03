@@ -17,11 +17,11 @@ const Menu = () => {
 
     return (
         <>
-            <header className="header-nav">
+            <header className={`header-nav ${isOpen ? '' : 'open-menu'}`}>
                 <div className="h-button" onClick={toggleMenu}>
                     {isOpen ? <IoCloseSharp className="close" /> : <GiHamburgerMenu className="hamburguesa" />}
                 </div>
-                <div className={`menu ${isOpen? 'open':''}`}>
+                <div className={`menu ${isOpen ? 'open' : ''}`}>
                     <h2 className="title-menu">GoClean</h2>
                     <ul className="nav-menu">
                         <li><NavLink to='/' className='inicio'>Inicio</NavLink></li>
