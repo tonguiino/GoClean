@@ -5,48 +5,142 @@ header {
     align-items: center;
     width: 100%;
 
-    .nav-menu {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 10px;
+    .h-button {
+        .close {
+            display: none;
+            color: #72ffaf;
+            cursor: pointer;
+            font-size: 40px;
+            &:hover{
+                color: #2efa85;
+            }
+        }
 
-        a {
-            padding: 1px 11px !important;
-            border-radius: 3px !important;
-            color: black;
-            text-decoration: none;
-
-
-            &:hover {
-                background-color: #72ffaf;
-
-
+        .hamburguesa {
+            display: none;
+            color: #72ffaf;
+            cursor: pointer;
+            font-size: 40px;
+            &:hover{
+                color: #2efa85;
             }
         }
     }
 
-    .nav-users {
-        height: 100%;
+    .menu {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 10px;
 
-        a {
-            padding: 5px 11px !important;
-            border-radius: 8px !important;
-            background-color: #72ffaf;
-            color: black;
-            text-decoration: none;
+        .nav-menu {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                padding: 1px 11px !important;
+                border-radius: 3px !important;
+                color: black;
+                text-decoration: none;
 
 
-            &:hover {
-                background-color: #2efa85;
+                &:hover {
+                    background-color: #72ffaf;
 
 
+                }
+            }
+        }
+
+        .nav-users {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                padding: 5px 11px !important;
+                border-radius: 8px !important;
+                background-color: #72ffaf;
+                color: black;
+                text-decoration: none;
+
+
+                &:hover {
+                    background-color: #2efa85;
+
+                }
             }
         }
 
 
+    }
+
+
+}
+
+@media screen and (max-width: 426px) {
+    header {
+        height: 435px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+
+        .h-button {
+            height: 9%;
+
+            .close {
+                display: block;
+
+            }
+
+            .hamburguesa {
+                display: block;
+
+            }
+
+        }
+
+        .menu {
+            height: 91%;
+            display: none;
+
+            .title-menu {
+                text-align: center;
+            }
+
+            .nav-menu {
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0;
+
+
+            }
+
+            .nav-users {
+                padding: 0;
+                height: auto;
+                flex-direction: column;
+                gap: 20px !important;
+            }
+
+        }
+
+        .menu.open {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    header.open-menu {
+        height: 40px;
     }
 }
