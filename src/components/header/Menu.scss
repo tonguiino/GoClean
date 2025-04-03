@@ -7,19 +7,26 @@ header {
 
     .h-button {
         .close {
-            color: #a8c806;
+            display: none;
+            color: #72ffaf;
             cursor: pointer;
             font-size: 40px;
         }
 
         .hamburguesa {
-            color: #b72c24;
+            display: none;
+            color: #72ffaf;
             cursor: pointer;
             font-size: 40px;
         }
     }
 
     .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         .nav-menu {
             height: 100%;
             display: flex;
@@ -76,8 +83,20 @@ header {
         align-items: center;
         width: 100%;
 
+
         .h-button {
             height: 9%;
+
+            .close {
+                display: block;
+
+            }
+
+            .hamburguesa {
+                display: block;
+
+            }
+
         }
 
         .menu {
@@ -114,7 +133,8 @@ header {
             justify-content: space-around;
         }
     }
-    header.open-menu{
+
+    header.open-menu {
         height: 40px;
     }
 }
