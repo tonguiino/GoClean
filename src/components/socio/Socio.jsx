@@ -21,7 +21,7 @@ const Socio = () => {
                         <form>
                             <input type="email" placeholder="Correo electrónico" required />
                             <input type="password" placeholder="Contraseña" required />
-                            <button type="submit">Iniciar sesión</button>
+                            <button type="submit" className="button-form">Iniciar sesión</button>
                             <a href="#">¿Olvidaste tu contraseña?</a>
                         </form>
                     </div>
