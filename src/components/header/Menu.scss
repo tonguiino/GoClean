@@ -11,6 +11,9 @@ header {
             color: #72ffaf;
             cursor: pointer;
             font-size: 40px;
+            &:hover{
+                color: #2efa85;
+            }
         }
 
         .hamburguesa {
@@ -18,6 +21,9 @@ header {
             color: #72ffaf;
             cursor: pointer;
             font-size: 40px;
+            &:hover{
+                color: #2efa85;
+            }
         }
     }
 

@@ -6,10 +6,7 @@ import { useState } from "react";
 
 const Menu = () => {
 
-
-
     const [isOpen, setIsOpen] = useState(false);
-
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
