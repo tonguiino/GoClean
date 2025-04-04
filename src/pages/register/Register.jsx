@@ -8,8 +8,8 @@ const Register = () => {
     return (
         <>
             <Menu />
-            <section>
-                <form action="">
+            <section className="register-container">
+                <form className="register-form" action="">
                     <label htmlFor="nombre">Nombre</label>
                     <input type="text" placeholder="nombre" />
                     <label htmlFor="mail">Correo electronico</label>
