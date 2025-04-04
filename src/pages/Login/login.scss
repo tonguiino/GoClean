@@ -1,0 +1,197 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 960px;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+}
+
+/* Imagen */
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.login-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 420px;
+  width: 100%;
+}
+
+.login-form h1 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1c160c;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  text-align: left;
+  max-width: 350px;
+}
+
+.login-form h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1c160c;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-field {
+  background-color: #f4efe6;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1c160c;
+  width: 100%;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 2px solid #019863;
+}
+
+/* Botones */
+.button-primary {
+  background-color: #019863;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button-primary:hover {
+  background-color: #017a4f;
+}
+
+.button-secondary {
+  background-color: #f4efe6;
+  color: #1c160c;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button-secondary:hover {
+  background-color: #e6e0d5;
+}
+
+/* Links */
+.links {
+  text-align: center;
+  font-size: 15px;
+  color: #a18249;
+  margin-top: 15px;
+}
+
+.links a {
+  text-decoration: underline;
+  color: #a18249;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: #806d3c;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Para pantallas medianas (tablets, 768px - 1024px) */
+@media (max-width: 1024px) {
+  .login-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+  }
+
+  .login-form {
+      align-items: center;
+  }
+
+  .login-form h1 {
+      text-align: center;
+  }
+
+  .input-group {
+      align-items: center;
+  }
+}
+
+/* Para móviles (menores a 768px) */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .image-section img {
+      max-width: 80%;
+  }
+
+  .login-form {
+      max-width: 100%;
+      align-items: center;
+  }
+
+  .login-form h1 {
+      font-size: 28px;
+      text-align: center;
+  }
+
+  .login-form h2 {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .input-group {
+      width: 90%;
+  }
+
+  .button-primary,
+  .button-secondary {
+      width: 90%;
+  }
+}

@@ -8,6 +8,7 @@ import Socio from './components/socio/Socio';
 import Contactanos from './components/contactanos/Contactanos';
 import Acerca_us from './pages/acerca_de_nosotros/Acerca_us';
 import Precio from './pages/precio/Precio';
+import Login from './pages/Login/Login';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/acercaNosotros' element={<Acerca_us />} ></Route>
         <Route path='/precios' element={<Precio />} ></Route>
         <Route path='/contactanos' element={<Contactanos />} ></Route>
+        <Route path='/login' element={<Login />} ></Route>
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
       </Routes>
     </>
