@@ -33,7 +33,7 @@ const Register = () => {
                         <option value="u">Usuario</option>
                         <option value="s">Socio</option>
                     </select>
-
+                    <button className="submit">Continuar</button>
                 </form>
             </section>
             <Footer />

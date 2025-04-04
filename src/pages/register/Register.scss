@@ -3,5 +3,15 @@
     .register-form {
         display: flex;
         flex-direction: column;
+        gap: 5px;
+
+
+
+        .submit{
+            background-color: #72ffaf;
+            &:hover{
+                background-color: #2efa85;
+            }
+        }
     }
 }
