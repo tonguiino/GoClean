@@ -8,6 +8,7 @@ const Acerca_us = () => {
     <>
       <Menu />
       <section>
+      <h2 className="titulo-valores">Nuestros Valores</h2>
         <div className="acerca-us">
           {/* Contenedor de la imagen */}
           <div className="image-container">
@@ -16,7 +17,6 @@ const Acerca_us = () => {
 
           {/* Sección de valores */}
           <section className="valores">
-            <h2>Nuestros Valores</h2>
             <div className="valores-grid">
               <div className="valor">
                 <div className="icon">⭐</div>
