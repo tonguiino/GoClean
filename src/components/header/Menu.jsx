@@ -29,7 +29,7 @@ const Menu = () => {
                     </ul>
                     <ul className="nav-users">
                         <li><NavLink to='#' className=''>Regístrate</NavLink></li>
-                        <li><NavLink to='#' className=''>Inicia sesión</NavLink></li>
+                        <li><NavLink to='/login' className=''>Inicia sesión</NavLink></li>
                     </ul>
                 </div>
             </header>

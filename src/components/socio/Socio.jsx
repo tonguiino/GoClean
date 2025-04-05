@@ -23,7 +23,7 @@ const Socio = () => {
                                 <input type="email" placeholder="Correo electrónico" required />
                                 <input type="password" placeholder="Contraseña" required />
                                 <button type="submit">Iniciar sesión</button>
-                                <a href="#">¿Olvidaste tu contraseña?</a>
+                                <a href="/Olvidaste_tu_contraseña">¿Olvidaste tu contraseña?</a>
                             </form>
                         </div>
                     </div>

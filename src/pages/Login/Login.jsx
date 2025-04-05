@@ -29,8 +29,8 @@ const Login = () => {
                 </form>
 
                 <div className="links">
-                    <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-                    <p><a href="#">¿Eres nuevo en GoClean?</a></p>
+                    <p><a href="/Olvidaste_tu_contraseña">¿Olvidaste tu contraseña?</a></p>
+                    <p><a href="/">¿Eres nuevo en GoClean?</a></p>
                 </div>
 
                 <button className="button-secondary">Regístrate y agenda tu limpieza</button>
