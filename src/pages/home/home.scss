@@ -75,10 +75,11 @@ section {
         justify-items: center;
         padding: 10px;
         width: 100%;
+        text-align: center;
         .container-img-banner {
 
             .img-banner {
-                width: 25em;
+                max-width: 100%;
             }
         }
         .container-goclean-text {
