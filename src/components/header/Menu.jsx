@@ -28,7 +28,7 @@ const Menu = () => {
                         <li><NavLink to='/contactanos'>Contáctanos</NavLink></li>
                     </ul>
                     <ul className="nav-users">
-                        <li><NavLink to='#' className=''>Regístrate</NavLink></li>
+                        <li><NavLink to='/registrate' className=''>Regístrate</NavLink></li>
                         <li><NavLink to='/login' className=''>Inicia sesión</NavLink></li>
                     </ul>
                 </div>

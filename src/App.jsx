@@ -10,6 +10,7 @@ import Acerca_us from './pages/acerca_de_nosotros/Acerca_us';
 import Precio from './pages/precio/Precio';
 import Login from './pages/Login/Login';
 import Olvidaste_tu_contraseña from './pages/olvidaste_la_contraseña/olvidaste_tu_contraseña';
+import Register from './pages/register/Register';
 
 
 
@@ -26,7 +27,8 @@ function App() {
         <Route path='/precios' element={<Precio />} ></Route>
         <Route path='/contactanos' element={<Contactanos />} ></Route>
         <Route path='/login' element={<Login />} ></Route>
-        <Route path='/Olvidaste_tu_contraseña' element={<Olvidaste_tu_contraseña />}></Route>
+        <Route path='/olvidaste_tu_contraseña' element={<Olvidaste_tu_contraseña />}></Route>
+        <Route path='/registrate' element={<Register/>}></Route>
         {/* De aqui para abajo siguen añadiendo las rutas que necesiten */}
       </Routes>
     </>
