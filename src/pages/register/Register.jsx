@@ -22,10 +22,13 @@ const Register = () => {
                     {errors.nombre?.type === 'maxLength' && <span className="span-error">{'Debe tener menos de 50 caracteres'} </span>}
                     <label htmlFor="email">Correo electronico</label>
                     <input type="email" {...register('email', { required: true })} />
+                    {errors.email?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
                     <label htmlFor="telefono">Telefono</label>
                     <input type="text" {...register('telefono', { required: true })} />
+                    {errors.telefono?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
                     <label htmlFor="direccion">Direccion</label>
                     <input type="text" {...register('direccion', { required: true, max: 100, message: 'Direccion no valida' })} />
+                    {errors.direccion?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
                     <label htmlFor="contraseña">Contraseña</label>
                     <input type="password" {...register('contraseña', { required: true })} />
                     <label htmlFor="confirmar-contraseña">Confirmar contraseña</label>
