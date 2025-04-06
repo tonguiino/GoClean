@@ -16,7 +16,7 @@ const Register = () => {
             <section className="register-container">
                 <form className="register-form" onSubmit={onSubmit}>
                     <label htmlFor="nombre">Nombre</label>
-                    <input type="text" placeholder="nombre" {...register('nombre', { required: true, message: 'es un campo requerido', minLength: 2, maxLength: 50 })} />
+                    <input type="text" placeholder="nombre" {...register('nombre', { required: true, minLength: 2, maxLength: 50, validate: value => value.trim() !== '' || 'No puede estar vacio' })} />
                     {errors.nombre?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
                     {errors.nombre?.type === 'minLength' && <span className="span-error">{'Debe tener mas de 2 caracteres'} </span>}
                     {errors.nombre?.type === 'maxLength' && <span className="span-error">{'Debe tener menos de 50 caracteres'} </span>}
@@ -31,8 +31,11 @@ const Register = () => {
                     {errors.direccion?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
                     <label htmlFor="contraseña">Contraseña</label>
                     <input type="password" {...register('contraseña', { required: true })} />
-                    <label htmlFor="confirmar-contraseña">Confirmar contraseña</label>
+                    {errors.contraseña?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
+                    <label htmlFor="confirmarContraseña">Confirmar contraseña</label>
                     <input type="password" {...register('confirmar-contraseña', { required: true })} />
+                    {errors.confirmarContraseña?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
+
                     <label htmlFor="sexo">sexo</label>
                     <select {...register('sexo')}>
                         <option value="h">Hombre</option>
