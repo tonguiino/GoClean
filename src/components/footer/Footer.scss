@@ -21,8 +21,21 @@ footer {
         align-items: center;
 
     }
+
     .middle {
-        grid-column: 2 / 3; 
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    footer {
+        width: 100vw;
+        .footer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 }
