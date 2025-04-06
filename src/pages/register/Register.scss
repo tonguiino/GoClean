@@ -7,11 +7,19 @@
 
 
 
-        .submit{
+        .submit {
             background-color: #72ffaf;
-            &:hover{
+
+            &:hover {
                 background-color: #2efa85;
             }
         }
+
+        .span-error {
+            color: tomato;
+            font-size: x-small;
+        }
     }
+
+
 }

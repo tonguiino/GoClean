@@ -16,8 +16,10 @@ const Register = () => {
             <section className="register-container">
                 <form className="register-form" onSubmit={onSubmit}>
                     <label htmlFor="nombre">Nombre</label>
-                    <input type="text" placeholder="nombre" {...register('nombre', { required: true })} />
-                    {errors.nombre && <span className="span-error">error</span>}
+                    <input type="text" placeholder="nombre" {...register('nombre', { required: true, message: 'es un campo requerido', minLength: 2, maxLength: 50 })} />
+                    {errors.nombre?.type === 'required' && <span className="span-error">{'Debes comletar el campo'}</span>}
+                    {errors.nombre?.type === 'minLength' && <span className="span-error">{'Debe tener mas de 2 caracteres'} </span>}
+                    {errors.nombre?.type === 'maxLength' && <span className="span-error">{'Debe tener menos de 50 caracteres'} </span>}
                     <label htmlFor="email">Correo electronico</label>
                     <input type="email" {...register('email', { required: true })} />
                     <label htmlFor="telefono">Telefono</label>
@@ -25,9 +27,9 @@ const Register = () => {
                     <label htmlFor="direccion">Direccion</label>
                     <input type="text" {...register('direccion', { required: true, max: 100, message: 'Direccion no valida' })} />
                     <label htmlFor="contraseña">Contraseña</label>
-                    <input type="password" {...register('contraseña',{ required: true })} />
+                    <input type="password" {...register('contraseña', { required: true })} />
                     <label htmlFor="confirmar-contraseña">Confirmar contraseña</label>
-                    <input type="password" {...register('confirmar-contraseña',{ required: true })} />
+                    <input type="password" {...register('confirmar-contraseña', { required: true })} />
                     <label htmlFor="sexo">sexo</label>
                     <select {...register('sexo')}>
                         <option value="h">Hombre</option>
