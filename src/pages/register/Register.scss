@@ -1,0 +1,67 @@
+.register-container {
+
+
+    .form-title {
+        font-size: 28px;
+    }
+
+    .form-subtitle {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .img-form-content {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+
+        .img-register {
+            height: 42em !important;
+            border-radius: 10px;
+
+        }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #f2f3f4;
+            padding: 15px 30px;
+            border-radius: 10px;
+
+
+
+            input {
+                padding: 10px;
+                border-radius: 4px;
+                border: none;
+                width: 25em;
+
+            }
+
+            select {
+                padding: 10px;
+                border-radius: 4px;
+                width: 25em;
+                margin-bottom: 14px;
+                border: none;
+            }
+
+
+            .submit {
+                background-color: #72ffaf;
+
+                &:hover {
+                    background-color: #2efa85;
+                }
+            }
+
+            .span-error {
+                color: tomato;
+                font-size: x-small;
+            }
+        }
+    }
+
+}
