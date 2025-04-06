@@ -3,7 +3,45 @@ import "./Socio.scss";
 import banner from "../../assets/img/haztesocio.png";
 import Menu from "../../components/header/menu";
 import Footer from "../footer/Footer";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 const Socio = () => {
+    const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
+
+    const onSubmit = async (data) => {
+        try {
+            const response = await axios.post("http://127.0.0.1:8000/api/login", {
+                correo: data.correo,
+                contrasena: data.contrasena
+            });
+
+            const resData = response.data;
+            console.log("Respuesta del servidor:", resData);
+
+            if (resData.status === "ok") {
+                alert("Inicio de sesión exitoso 🎉");
+
+                // Almacenar token si más adelante se usa
+                localStorage.setItem("usuario", JSON.stringify(resData.data));
+                localStorage.setItem("rol", resData.data.rol);
+
+                if (resData.data.rol === "Socio") {
+                    navigate("/dashboard-socio");
+                } else {
+                    navigate("/dashboard-cliente");
+                }
+            } else {
+                alert("Credenciales incorrectas");
+            }
+        } catch (error) {
+            console.error("Error en login:", error);
+            alert("Error en el inicio de sesión. Revisa tus datos.");
+        }
+    };
+
     return (
         <>
             <Menu />
@@ -19,9 +57,9 @@ const Socio = () => {
 
                         <div className="form-container">
                             <h3>¿Ya eres un profesional? Inicia sesión</h3>
-                            <form>
-                                <input type="email" placeholder="Correo electrónico" required />
-                                <input type="password" placeholder="Contraseña" required />
+                            <form onSubmit={handleSubmit(onSubmit)}>
+                                <input type="email" placeholder="Correo electrónico" {...register("correo")} required />
+                                <input type="password" placeholder="Contraseña" {...register("contrasena")} required />
                                 <button type="submit">Iniciar sesión</button>
                                 <a href="/Olvidaste_tu_contraseña">¿Olvidaste tu contraseña?</a>
                             </form>
@@ -35,4 +73,3 @@ const Socio = () => {
 };
 
 export default Socio;
-
