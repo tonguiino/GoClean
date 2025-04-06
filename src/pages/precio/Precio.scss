@@ -17,3 +17,17 @@
     
     }
 }
+
+@media screen and (max-width: 426px)
+{
+    .price-container{
+        .img-price{
+            width: 25em;
+        }
+        .cards-container{
+flex-direction: column;
+        
+        }
+
+    }
+}
