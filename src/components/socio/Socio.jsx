@@ -18,15 +18,16 @@ const Socio = () => {
                         <a href="/registro" className="btn">Regístrate como profesional de limpieza</a>
 
 
-                    <div className="form-container">
-                        <h3>¿Ya eres un profesional? Inicia sesión</h3>
-                        <form>
-                            <input type="email" placeholder="Correo electrónico" required />
-                            <input type="password" placeholder="Contraseña" required />
-                            <button type="submit" className="button-form">Iniciar sesión</button>
-                            <a href="#">¿Olvidaste tu contraseña?</a>
-                        </form>
+                        <div className="form-container">
+                            <h3>¿Ya eres un profesional? Inicia sesión</h3>
+                            <form>
+                                <input type="email" placeholder="Correo electrónico" required />
+                                <input type="password" placeholder="Contraseña" required />
+                                <button type="submit" className="button-form">Iniciar sesión</button>
+                                <a href="#">¿Olvidaste tu contraseña?</a>
+                            </form>
 
+                        </div>
                     </div>
                 </div>
             </section>
