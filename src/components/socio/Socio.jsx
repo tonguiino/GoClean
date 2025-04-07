@@ -29,9 +29,9 @@ const Socio = () => {
                 localStorage.setItem("rol", resData.data.rol);
 
                 if (resData.data.rol === "Socio") {
-                    navigate("/dashboard-socio");
+                    navigate("/dashboard_socio");
                 } else {
-                    navigate("/dashboard-cliente");
+                    navigate("/dashboard_cliente");
                 }
             } else {
                 alert("Credenciales incorrectas");

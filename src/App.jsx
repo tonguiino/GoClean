@@ -11,6 +11,9 @@ import Precio from './pages/precio/Precio';
 import Login from './pages/Login/Login';
 import Olvidaste_tu_contraseña from './pages/olvidaste_la_contraseña/olvidaste_tu_contraseña';
 import Register from './pages/register/Register';
+import DashboardUsuario from './pages/dashboard_usuario/Dashboard_usuario';
+import DashboardSocio from './components/dashboard_socio/Dashboard_socio';
+
 
 
 
@@ -23,6 +26,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} ></Route>
         <Route path='/socio' element={<Socio />} ></Route>
+        <Route path='/dashboard_socio' element={<DashboardSocio />}></Route>
+        <Route path='/dashboard_usuario' element={<DashboardUsuario />}></Route>
         <Route path='/acercaNosotros' element={<Acerca_us />} ></Route>
         <Route path='/precios' element={<Precio />} ></Route>
         <Route path='/contactanos' element={<Contactanos />} ></Route>

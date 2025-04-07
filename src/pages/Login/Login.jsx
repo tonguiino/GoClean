@@ -1,32 +1,45 @@
-import { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import Footer from "../../components/footer/Footer";
-import Menu from "../../components/header/menu";
+import React from "react";
 import "./Login.scss";
 import imagenlogin from "../../assets/img/imagenlogin.png";
+import Menu from "../../components/header/menu";
+import Footer from "../../components/footer/Footer";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [correo, setCorreo] = useState("");
-  const [contrasena, setContrasena] = useState("");
+  const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-
+  const onSubmit = async (data) => {
     try {
       const response = await axios.post("http://127.0.0.1:8000/api/login", {
-        correo,
-        contrasena
+        correo: data.correo,
+        contrasena: data.contrasena
       });
 
-      console.log("Login exitoso", response.data);
-      alert("¡Inicio de sesión exitoso!");
-      // Redirige, por ejemplo, a la página principal
-      navigate("/");
+      const resData = response.data;
+      console.log("Respuesta del servidor:", resData);
+
+      if (resData.status === "ok") {
+        alert("Inicio de sesión exitoso 🎉");
+
+        // Guardar usuario localmente
+        localStorage.setItem("usuario", JSON.stringify(resData.data));
+        localStorage.setItem("rol", resData.data.rol);
+
+        // Redirigir según rol
+        if (resData.data.rol === "Socio") {
+          navigate("/dashboard_socio");
+        } else {
+          navigate("/dashboard_usuario");
+        }
+      } else {
+        alert("Credenciales incorrectas");
+      }
     } catch (error) {
-      console.error("Error al iniciar sesión:", error.response?.data || error.message);
-      alert("Credenciales incorrectas 😢");
+      console.error("Error en login:", error);
+      alert("Error en el inicio de sesión. Revisa tus datos.");
     }
   };
 
@@ -42,14 +55,14 @@ const Login = () => {
           <h1>¡Bienvenido a GoClean!</h1>
           <h2>Inicia sesión para programar tu próxima limpieza</h2>
 
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="input-group">
               <input
                 type="email"
                 placeholder="Correo electrónico"
                 className="input-field"
-                value={correo}
-                onChange={(e) => setCorreo(e.target.value)}
+                {...register("correo")}
+                required
               />
             </div>
             <div className="input-group">
@@ -57,8 +70,8 @@ const Login = () => {
                 type="password"
                 placeholder="Contraseña"
                 className="input-field"
-                value={contrasena}
-                onChange={(e) => setContrasena(e.target.value)}
+                {...register("contrasena")}
+                required
               />
             </div>
             <button type="submit" className="button-primary">Iniciar sesión</button>
@@ -80,3 +93,4 @@ const Login = () => {
 };
 
 export default Login;
+

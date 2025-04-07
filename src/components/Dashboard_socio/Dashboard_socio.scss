@@ -1,0 +1,290 @@
+.dashboard-socio {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background-color: #f4fefe;
+  color: #333;
+
+  .sidebar {
+    width: 250px;
+    background-color: #3ec1d3;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 0.75rem 1rem;
+        margin: 0.5rem 0;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background-color: #30adb9;
+        }
+      }
+    }
+
+    .logout-button {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background-color: #2efa85 !important;
+      color: #fff !important;
+      border: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      i {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background-color: #3ec1d3 !important;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2rem 3rem;
+
+    .perfil-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      .foto-perfil {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #10ac84;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 1.8rem;
+        color: #3ec1d3;
+      }
+
+      .rol,
+      .experiencia {
+        margin: 0.25rem 0;
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .botones {
+        margin-left: auto;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        button {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: all 0.3s ease;
+
+          &.btn-editar {
+            background-color: #10ac84;
+            color: #fff;
+
+            &:hover {
+              background-color: #0c9c76;
+            }
+          }
+
+          &.btn-preview {
+            background-color: transparent;
+            color: #10ac84;
+            border: 2px solid #10ac84;
+
+            &:hover {
+              background-color: #10ac84;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    section {
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: 1.4rem;
+        color: #3ec1d3;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #10ac84;
+        display: inline-block;
+        padding-bottom: 0.3rem;
+      }
+    }
+
+    .experiencia .item-exp {
+      display: flex;
+      gap: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .titulo {
+        font-weight: bold;
+        color: #3ec1d3;
+      }
+
+      .fecha {
+        font-size: 0.85rem;
+        color: #888;
+      }
+
+      .descripcion {
+        font-size: 0.95rem;
+        color: #444;
+      }
+    }
+
+    .calificaciones {
+      .puntaje-principal {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+        .promedio {
+          font-size: 2rem;
+          color: #10ac84;
+          font-weight: bold;
+        }
+
+        .estrellas {
+          color: #f1c40f;
+        }
+
+        .total-reviews {
+          color: #888;
+        }
+      }
+
+      .barra-calificaciones .linea {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+
+        span:first-child {
+          width: 50px;
+        }
+
+        .barra {
+          flex: 1;
+          height: 10px;
+          background-color: #ddd;
+          border-radius: 5px;
+          overflow: hidden;
+
+          .relleno {
+            height: 100%;
+            background-color: #10ac84;
+          }
+        }
+
+        span:last-child {
+          width: 40px;
+          text-align: right;
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    .facturas ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        background-color: #fff;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+
+  // 📱 Responsive para móviles
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+      text-align: center;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          margin: 0.5rem;
+        }
+      }
+    }
+
+    .main-content {
+      padding: 1.5rem 1rem;
+
+      .perfil-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .botones {
+          justify-content: center;
+        }
+      }
+
+      .experiencia .item-exp {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+    }
+  }
+}
