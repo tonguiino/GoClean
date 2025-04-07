@@ -6,6 +6,7 @@
     padding: 2rem 5%;
     max-width: 1200px;
     margin: 0 auto;
+    color: #333;
 
     .image-container {
         flex: 1;
@@ -32,7 +33,7 @@
             font-size: 1.8rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            color: #2efa85;
+
             position: relative;
             top: -20px;
         }
@@ -44,7 +45,7 @@
 
             .valor {
                 background: #ffffff;
-                border: 2px solid #2efa85;
+                border: 2px solid #93efbb;
                 padding: 0.9rem;
                 border-radius: 12px;
                 display: flex;
@@ -61,7 +62,7 @@
 
                 .icon {
                     font-size: 1.8rem;
-                    color: #019863;
+
                 }
 
                 .valor-texto {
@@ -69,7 +70,6 @@
                         font-size: 1.1rem;
                         font-weight: bold;
                         margin-bottom: 0.3rem;
-                        color: #2efa85;
                     }
 
                     p {
@@ -94,7 +94,8 @@
     gap: 2rem;
     text-align: center;
 
-    .mision, .vision {
+    .mision,
+    .vision {
         flex: 1;
         background: #f5f5f5;
         padding: 1.5rem;
@@ -108,7 +109,7 @@
 
         h2 {
             font-size: 1.6rem;
-            color: #2efa85;
+            color: #71fcae;
             margin-bottom: 1rem;
         }
 
@@ -165,5 +166,21 @@
 
     .valores {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    .acerca-us {
+        max-width: 80%;
+    }
+
+    .valores {
+        padding: 0 !important;
+    }
+
+    .valores-grid {
+        max-width: 80%;
+        padding: 0;
     }
 }
