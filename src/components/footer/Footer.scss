@@ -1,0 +1,41 @@
+footer {
+    margin-top: 30px;
+    width: 99vw;
+    height: 130px;
+    color: #fdfefe;
+    background-color: #070707;
+    text-align: center;
+    display: grid;
+    place-content: center;
+
+    p {
+        margin: 0;
+    }
+
+    .footer {
+        display: grid;
+        width: 100%;
+        padding: 5px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(2, 50px);
+        align-items: center;
+
+    }
+
+    .middle {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    footer {
+        width: 100vw;
+        .footer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
